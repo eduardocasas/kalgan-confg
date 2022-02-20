@@ -25,7 +25,7 @@ pub struct Config {
     pub collection: HashMap<String, Value>,
 }
 impl Config {
-    /// Creates and return the `Config` instance given the the data source path (can be a file or a folder).
+    /// Creates and return the `Config` instance given the data source path (can be a file or a folder).
     /// # Examples:
     /// ```
     /// use kalgan_config::Config;
