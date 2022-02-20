@@ -28,7 +28,7 @@ impl Config {
     /// Creates and return the `Config` instance given the the data source path (can be a file or a folder).
     /// # Examples:
     /// ```
-    /// use config::Config;
+    /// use kalgan_config::Config;
     ///
     /// let config: Config = Config::new("tests/settings.yaml");
     /// ```
@@ -38,7 +38,7 @@ impl Config {
     /// Returns the `serde_yaml::Value` for the given parameter.
     /// # Examples:
     /// ```
-    /// # use config::Config;
+    /// # use kalgan_config::Config;
     /// # let config: Config = Config::new("tests/settings.yaml");
     /// assert_eq!(config.get("user.name").unwrap(), "John");
     /// ```
@@ -52,7 +52,7 @@ impl Config {
     /// Returns the value as a `String` for the given parameter.
     /// # Examples:
     /// ```
-    /// # use config::Config;
+    /// # use kalgan_config::Config;
     /// # let config: Config = Config::new("tests/settings.yaml");
     /// assert_eq!(config.get_string("user.name").unwrap(), "John".to_string());
     /// ```
@@ -65,7 +65,7 @@ impl Config {
     /// Returns the value as a `bool` for the given parameter.
     /// # Examples:
     /// ```
-    /// # use config::Config;
+    /// # use kalgan_config::Config;
     /// # let config: Config = Config::new("tests/settings.yaml");
     /// assert_eq!(config.get_bool("user.is_real").unwrap(), false);
     /// ```
@@ -78,7 +78,7 @@ impl Config {
     /// Returns the value as a `i64` for the given parameter.
     /// # Examples:
     /// ```
-    /// # use config::Config;
+    /// # use kalgan_config::Config;
     /// # let config: Config = Config::new("tests/settings.yaml");
     /// assert_eq!(config.get_number("user.age").unwrap(), 39);
     /// ```
@@ -91,7 +91,7 @@ impl Config {
     /// Returns the value as a `f64` for the given parameter.
     /// # Examples:
     /// ```
-    /// # use config::Config;
+    /// # use kalgan_config::Config;
     /// # let config: Config = Config::new("tests/settings.yaml");
     /// assert_eq!(config.get_float("user.height").unwrap(), 1.78);
     /// ```
@@ -104,7 +104,7 @@ impl Config {
     /// Returns the value as a `Vec<serde_yaml::Value>` for the given parameter.
     /// # Examples:
     /// ```
-    /// # use config::Config;
+    /// # use kalgan_config::Config;
     /// # let config: Config = Config::new("tests/settings.yaml");
     /// assert_eq!(config.get_vec("user.children").unwrap(), vec!["Huey", "Dewey", "Louie"]);
     /// ```
