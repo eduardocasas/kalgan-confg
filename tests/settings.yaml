@@ -1,0 +1,9 @@
+user:
+  name: John
+  is_real: false
+  age: 39
+  height: 1.78
+  children:
+    - Huey
+    - Dewey
+    - Louie
