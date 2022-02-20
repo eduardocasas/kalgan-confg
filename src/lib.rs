@@ -22,7 +22,7 @@ mod parameters;
 ///     - Louie
 /// ```
 pub struct Config {
-    collection: HashMap<String, Value>,
+    pub collection: HashMap<String, Value>,
 }
 impl Config {
     /// Creates and return the `Config` instance given the the data source path (can be a file or a folder).
