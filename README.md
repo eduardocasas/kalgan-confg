@@ -47,7 +47,7 @@ assert_eq!(config.get_vec("user.children").unwrap(), vec!["Huey", "Dewey", "Loui
 For further information please visit:
 
 * [Official Kalgan Site](https://kalgan.eduardocasas.com)
-* [API Documentation on docs.rs](https://docs.rs/crate/kalgan-config/latest)
+* [API Documentation on docs.rs](https://docs.rs/kalgan-config)
 
 
 ## License
